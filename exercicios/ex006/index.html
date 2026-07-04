@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatacoes</title>
+    <style> #cormark {
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações(nunca use as que estao em nao semantica)</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>
+        <b>nesta frase, ela esta usando uma tag nao semantica</b>, chamada BOLD com a tag &lt;b&gt;
+    </p>
+
+    <p>Agora temos outra <strong>frase com uma tag semantica</strong> usando a tag STRONG(&lt;strong&gt;)</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>
+        <i>Nesta frase, temos um termo em itálico usando a tag I</i> (não semântica). tag: &lt;i&gt;
+    </p>
+    <p>
+        <em>Nesta frase, temos um termo em ênfase usando a tag EM (semântica).</em> tag: &lt;em&gt;
+    </p>
+
+    <h2>Texto marcado</h2>
+    <p>
+        Podemos criar também um texto marcado usando a <mark>Tag Mark</mark> tag: &lt;mark&gt;
+        podemos alterar a cor se colocamos ele em uma classe ou id. veja no proximo exemplo
+    </p>
+    <p>Agora a cor do mark e <mark id="cormark">Vermelho.</mark>(veja o codigo)</p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Alem de alterar o tamanho do texto no css, temos a tag &lt;big&gt; e para diminuir(alem no css) temos a tag &lt;small&gt; veja o exemplo a seguir.</p>
+
+    <p>texto <big>GRANDE(nao semantica)</big></p>
+    <p>texto <small>PEQUENO(semantica)</small></p>
+    <p>"por que o big esta obselta e o small nao?"</p>
+    <!--explicacao-->
+    <p>A tag big foi descontinuada e considerada obsoleta porque o HTML5 separou a estrutura (o que o conteúdo significa) da apresentação visual (como ele aparece na tela). O elemento big servia apenas para alterar o tamanho da fonte, sem adicionar nenhum significado.</p>
+
+    <p>A tag small não está obsoleta. Embora seu efeito visual possa ser feito com CSS, ela ganhou um valor semântico claro no HTML5: ela é usada para representar textos menores de importância secundária, como direitos autorais, avisos legais, comentários secundários ou notas de rodapé.</p>
+    
+    <h2>Texto deletado</h2>
+    <p>para "deletar" um texto, use a tag &lt;del&gt;, exemplo:
+        texto <del>deletado</del>
+        para indicar que ele deve ser lido, mas não considerado.
+    </p>
+
+    <h2>Texto inserido</h2>
+    <p>
+    Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.
+    </p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>geralmente para calculos e etc, exemplo: <br>
+        x <sup>3</sup> +9
+    </p>
+
+    <h2>Texto subscrito</h2>
+    <p>geralmente para calculos de reacoes, ciencias em geral, exemplo:
+        <br>
+
+        H<sub>2</sub>O
+    </p>
+
+</body>
+</html>

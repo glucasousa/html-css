@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade entre telas</title>
+</head>
+<body>
+    <h1>vai ter 3 imagens dependendo com a tela</h1>
+    <h2>uma em 300, outra 700, e outra 1000, alem de audio testado ali embaixo, tudo feito antes de ver a aula dele</h2>
+
+    <picture>
+        <source media="(max-width: 300px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 700px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto flexivel">
+    </picture>
+
+    <h2>audio e sei la porra</h2>
+    <audio preload="metadata" controls loop>
+        <!--esse para caso queira o dono queir que inicie, o title funciona aqui-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload="metadata" controls autoplay>
+        <!--esse para caso queira o que inicie, o title funciona aqui-->
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
