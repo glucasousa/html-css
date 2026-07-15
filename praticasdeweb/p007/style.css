@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    --cornav: #2B2B2B;
+    --corback: black;
+    --cortextehr: #AAAAAA;
+
+    --fonth1: "Bebas Neue", sans-serif;
+    --fonth2: "Montserrat", sans-serif;
+    --fontp: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+html,body {
+    background-color: var(--corback);
+    color: var(--cortextehr);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cornav);
+    padding: 10px;
+}
+
+header > h1 {
+    font-family: var(--fonth2);
+    font-size: 2em;
+    padding: 20px;
+}
+
+header > h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav {
+    background-color: var(--cornav);
+    text-align: center;
+    padding: 20pxpx;
+}
+
+nav > a {
+    font-family: var(--fonth2);
+    color: var(--cortextehr);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 100px;
+}
+
+main > section.container {
+    display: flex;
+}
+
+main > section.container > figure.left-container {
+    flex: 1;
+    background-position: fixed;
+}
+
+main > section.container > article.right-container {
+    flex: 1;
+    background-color: var(--cornav);
+}
+
+main > section.container > article.right-container > h2 {
+    font-family: var(--cortextehr);
+
+}
+
+

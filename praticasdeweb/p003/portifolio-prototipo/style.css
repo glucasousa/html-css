@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* 3 fontes , 1 pro titulo, outra pro h2, e outra para p */
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+:root {
+    --col01: #1A9FD6;
+    --col02: #ffffff;
+    --col03: #000000;
+
+    --fonth1: "Bebas Neue", sans-serif;
+    --fontp: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: var(--fontp);
+    background-color: #000000;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    font-family: var(--fonth1);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-color: var(--col01);
+        text-shadow: 10px 10px black;
+
+}
+
+header > h1 {
+    font-size: 100px;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--col01)
+}
+
+nav > a {
+    font-size: 25px;
+    padding: 15px;
+    margin: 30px;
+    color: white;
+    text-decoration: overline;
+    width: 10px;
+}
+
+nav > a:hover {
+    color: var(--col03);
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 30px;
+}
+
+main {
+    background-color: var(--col01);
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+
+}
+
+section#imagem {
+    flex: 1;
+    background: #fff url("images/foto-programando.jpg") left center no-repeat scroll;
+    background-size: cover;
+}
+
+section#secao1 {
+    flex: 1; /* ocupa a outra metade */
+    padding: 20px;
+}
+
+
+section > article > h2 {
+    font-size: 50px;
+    padding: 5px;
+    color: rgb(196, 231, 230);
+    text-shadow: 10px 10px black;
+}
+
+section > article > p {
+    background-color: var(--col02);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 25px;
+    box-shadow: 10px 10px black;
+}
+
+.redirect {
+    margin: 30px;
+    background-color: var(--col02);
+    padding: 60px;
+    box-shadow: 10px 10px black;
+    border-radius: 20px;
+}
+
+.redirect > h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.redirect > .buttons {
+    background-color: var(--col02);
+}
+
+.redirect > .buttons > a{
+    color: var(--col03);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 5px;
+    text-decoration: none;
+    width: 200px;
+}
+
+.redirect > .buttons > a:hover {
+    background-color: var(--col01);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+section#contatos {
+    flex-basis: 100%;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, var(--col01), var(--col02),var(--col01));
+    max-width: 1200px;
+    height: 800px;
+}
+
+section#contatos  h1 {
+    text-align: center;
+    font-family: var(--fonth1);
+    color: var(--col02);
+    text-shadow: 10px 15px black;
+    font-size: 70px;
+}
+
+section#contatos p {
+    background-color: var(--col02);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 25px;
+    box-shadow: 10px 10px black;
+}
+
+.social-links {
+    background-color: var(--col02);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 25px;
+    box-shadow: 10px 10px black;
+    display: flex;
+}
+
+.social-links > li {
+    list-style-type: none;
+    align-items: center;
+
+}
+
+.social-links a {
+    padding: 40px;
+
+}
+.social-links a img {
+    flex: 1;
+    width: 100px;
+    max-width: 100%;
+}
