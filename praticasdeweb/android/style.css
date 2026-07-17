@@ -74,6 +74,7 @@ header > nav > a:hover {
 main {
     max-width: 800px;
     max-height: 800px;
+    background-color: white;
 }
 
 main > section#conteudo h1,h2 {
@@ -95,11 +96,31 @@ main > section#conteudo h2 {
 main > section#conteudo p {
     font-family: var(--fontep);
     text-indent: 40px;
-    padding: 2px;
-    margin: auto;
+    padding: 5px;
+    margin: 15px;
 }
 
-main > section#conteudo > strong {
+main > section#conteudo  strong {
     color: var(--cor03);
+    background-color: var(--cor04);
+    padding: 2px;
+}
+
+main > section#conteudo img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+section#video {
+    background-color: var(--cor05);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
     
+}
+
+section#lista {
+    background-color: var(--cor02);
+
 }
