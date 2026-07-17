@@ -40,7 +40,7 @@ header > h1 {
     text-align: center;
     font-family: var(--fonted);
     color: white;
-    text-shadow: 5px 5px black;
+    text-shadow: 3px 3px black;
 }
 
 header > p {
@@ -88,7 +88,7 @@ main > section#conteudo h1 {
 main > section#conteudo h2 {
     margin: 20px;
     color: var(--cor03);
-    background-image: linear-gradient(to right, var(--cor01), var(--cor03), var(--cor01));
+    background-image: linear-gradient(to right, var(--cor02), var(--cor01));
     padding: 2px;
 }
 
@@ -97,4 +97,9 @@ main > section#conteudo p {
     text-indent: 40px;
     padding: 2px;
     margin: auto;
+}
+
+main > section#conteudo > strong {
+    color: var(--cor03);
+    
 }
