@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Externos</title>
+    <title>Mídias em HTML5</title>
 </head>
 <body>
-    <h1>links externos</h1>
-    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io/" hreflang="pt-br" title="Repositorio" target="_blank" rel="external">repositorio do guanabara</a></p>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
 
-    <p>Voce tambem pode acessar o <a href="https://www.youtube.com/cursoemvideo" title="Canal" target="_blank" rel="author">canal do guanabara</a></p>
-    
-    <h1>Usando links internos</h1>
-    <p>voce tambem pode acessar a minha segunda pagina usando link internos pelo html. <a href="pag002.html" title="pagina 2" target="_self" rel="next">clique aqui</a></p>
+    <picture>
+        <source media="(max-width: 768px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 900px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="Imagem Grande">
+    </picture>
 
-    <h1>Downloads</h1>
-    <ul>
-        <li><a href="meulivro.pdf" download="meulivro.pdf" type="application/pdf">baixe o pdf</a></li>
-        <li><a href="meulivro.zip" download="meulivro.zip" type="application/zip">ou baixe o zip</a></li>
-    </ul>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
