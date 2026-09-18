@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script 002</title>
+
+    <style>
+        button {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript 002</h1>
+    <p>prompt(perguntas), strings, e tals</p>
+    <p>veja a seguir</p>
+
+    <button onclick="clicar()"> clicar </button>
+
+
+    <script>
+    function clicar() {
+        let name = window.prompt("seu nome?")
+
+        let idade = window.prompt("sua idade?")
+
+        let anime = window.prompt("qual seu anime favorito?")
+
+        window.alert(`ola ${name}, sua idade e ${idade}, e seu anime favorito e ${anime}`)
+    } 
+    </script>
+</body>
+</html>
