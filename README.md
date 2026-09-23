@@ -1,8 +1,4 @@
-<h1>HTML E CSS</h1>
-
-<hr>
-<p>este <strong>repositorio</strong> e apenas projetos de exercicio ou desafios do modulos de curso de html e css, do professor gustavo guanabara</p>
-
-<h2>as praticas de web, e separado, projetos, etc..</h2>
+## REPOSITORIO DAS PRATICAS DA TEORIA DAS AULAS DO PROFESSOR GUANABARA(modulo 1 ate o 5)
+ -- pelo o que voce leu, nao tenho muito o que falar :)
 
 
